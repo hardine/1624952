@@ -1,0 +1,245 @@
+﻿*{border:0;
+padding:0; margin:0;}
+
+
+body {
+	background-color:#CCCCFF;
+}
+#logo{
+	width:180px;
+	background-color:#9DB49A;
+	min-height:100px;
+	float:left;
+}
+#page{
+	width:920px;
+	margin:auto;
+	background-color:#618E5B;
+	min-height:500px;
+}
+
+#navigation {
+    background-color: #272E26;
+    overflow: hidden;
+	text-align: center;
+}
+
+/* Style the links inside the navigation bar */
+#navigation a {
+    float: Left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+#navigation a:hover {
+    background-color: #37932C;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+#navigation a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#Categories{
+	
+	height:500px;
+	width:180px;
+	float:left;
+	padding-top:10px;
+	background-color: #618E5B;
+}
+
+#Categories h4{
+	
+	font-size: 26px; 
+	line-height: 40px;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px #c77003; 
+	text-align:center;
+	background-color: #618E5B;
+}
+#Categories a{
+	
+	font-size: 17px;
+	line-height: 30px;
+    color: #f2f2f2;
+	text-align:center;
+	margin:0 auto;    
+	display:block;
+	text-decoration: none;
+}
+
+/* Change the color of links on hover */
+#Categories a:hover {
+    background-color: #37932C;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+#Categories a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#content{
+margin-left:180px;
+padding-left:10px;
+padding-right:10px;
+background-color:white;
+}
+
+#content h2{
+	
+	font-size: 18px; 
+	line-height: 40px;
+    font-family: "Roboto", sans-serif;
+    color: #000;
+}
+
+table, td{
+	border:2px solid black;
+    margin-left: 50px;
+}
+
+td img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a, a:visited{
+	color:black;
+	}
+
+
+
+#menu ul li{
+	list-style-type:none;
+	padding-left:10px;
+	
+}
+
+a:hover{
+	color:white;
+}
+
+input[type="text"] { 
+border: 2px solid #000000;
+width:300px;
+}
+
+#message { 
+border: 2px solid #000000;
+width:400px;
+height:120px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+
+/*The style below will apply to the element with an
+id of "header" */
+#header{
+	width:100%;
+	height:100px;
+	background-color:#618E5B;
+	text-align:center;
+}
+#header h1{
+	
+	font-size: 22px; 
+	line-height: 40px;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px #c77003; 
+	text-align:center;
+}
+#bottom{
+	width:100%;
+	height:90px;
+	background-color:#272E26;
+}
+
+#contact{
+	float:left;
+}
+
+#page h4{
+	
+	font-size: 14px; 
+	line-height: 20px;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px #c77003; 
+	text-align:center;
+    display:block;
+}
+#page a{
+	font-size: 15px; 
+	font-family: "Roboto", sans-serif;
+    color: #fff;
+    text-align:center;
+	margin:0 auto;    
+	display:block;
+}
+
+#page p{
+text-align:center;
+font-size: 10px; 
+}
+
+#contact p{
+	
+	font-size: 12px; 
+	text-align:left;
+	text-decoration: none;
+    line-height: 20px;
+    color: #000;
+}
+
+#contact h4{
+	
+	font-size: 16px; 
+	text-align:left;
+	text-decoration: none;
+    display: inline-block;
+}
+
+#login {
+    overflow: hidden;
+}
+
+#login a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    font-size: 12px; 
+    font-weight:bold;
+    text-decoration: none;
+}
+
+#contactdetails p{
+     float: left;
+    display: block;
+    color: #000;
+    font-size: 16px; 
+    font-weight:bold;
+}

@@ -101,6 +101,7 @@
     <Content Include="kitchen.aspx" />
     <Content Include="packages.config" />
     <Content Include="index.Master" />
+    <None Include="Properties\PublishProfiles\1624952.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

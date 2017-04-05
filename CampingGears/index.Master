@@ -24,15 +24,15 @@
              <div id="login">
                 <p><a href=""> | Login |</a></p>
                 <p><a href="">| Register </a></p>
-                 <br />
+                 <br/>
                  </div>
         </div>
 
         <div id="Categories">
 
             <h4>CATEGORIES:</h4>
-            <a href="equipment.aspx">Camping Equipments</a></br>
-            <a href="kitchen.aspx">Kitchen Equipments</a></br>
+            <a href="equipment.aspx">Camping Equipments</a><br/>
+            <a href="kitchen.aspx">Kitchen Equipments</a><br/>
             <a href="accessories.aspx">Camping Accesssories</a>
         </div>
 
@@ -45,13 +45,13 @@
     </div>  
             <br/>
         </div>
-        </br>
+        <br/>
         <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
         <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
         <a href="#Admin">Admin Login</a>
         <br/>
          <p>© 2017 OT-DOORS CO ALL RIGHT RESERVED.</p>
-        <br />
+        <br/>
     </div>
 </body>
 </html>

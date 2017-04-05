@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/index.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="CampingGears.home" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <h2>Search Product</h2>
-            <form>
+            <form action="search">
                 Search:
                 <input type="text" name="search" value="" />
                 <input type="submit" value="Search" />
@@ -13,22 +13,22 @@
         <table>
             <tr>
                 <td>
-                    <img src="~/images/equipment/tent.png" alt="tent" style="width: 300px; height: 200px;" runat="server"><br>
-                    <p>TENT<p>
+                    <img src="~/images/equipment/tent.png" alt="tent" style="width: 300px; height: 200px;" runat="server"/><br/>
+                    <p>TENT</p>
                 </td>
                 <td>
-                    <img src="~/images/equipment/scoop.png" alt="scoop" style="width: 300px; height: 200px;" runat="server"><br>
-                    <p>SCOOP<p>
+                    <img src="~/images/equipment/scoop.png" alt="scoop" style="width: 300px; height: 200px;" runat="server"/><br/>
+                    <p>SCOOP</p>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="~/images/equipment/compass.png" alt="compass" style="width: 200px; height: 200px;" runat="server"><br>
-                    <p>COMPASS<p>
+                    <img src="~/images/equipment/compass.png" alt="compass" style="width: 200px; height: 200px;" runat="server"/><br/>
+                    <p>COMPASS</p>
                 </td>
                 <td>
-                    <img src="~/images/equipment/knife.png" alt="knife" style="width: 200px; height: 200px;" runat="server"><br>
-                    <p>KNIFE<p>
+                    <img src="~/images/equipment/knife.png" alt="knife" style="width: 200px; height: 200px;" runat="server"/><br/>
+                    <p>KNIFE</p>
                 </td>
             </tr>
         </table>

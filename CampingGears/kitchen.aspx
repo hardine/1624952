@@ -15,34 +15,34 @@
     <table>
         <tr>
             <td>
-                <img src="~/images/Cooking/firestarter.png" alt="" style="width: 200px; height: 200px;" runat="server" /><br>
+                <img src="~/images/Cooking/firestarter.png" alt="fire starter" style="width: 200px; height: 200px;" runat="server" /><br>
                 <p>
                     FIRE STARTER<p>
             </td>
             <td>
-                <img src="~/images/Cooking/fuelbottle.png" alt="" style="width: 200px; height: 200px;" runat="server" /><br>
+                <img src="~/images/Cooking/fuelbottle.png" alt="fuel bottle" style="width: 200px; height: 200px;" runat="server" /><br>
                 <p>
                     FUEL BOTTLE<p>
             </td>
             <td>
-                <img src="~/images/Cooking/gas.png" alt="" style="width: 200px; height: 200px;" runat="server" /><br>
+                <img src="~/images/Cooking/gas.png" alt="gas" style="width: 200px; height: 200px;" runat="server" /><br>
                 <p>
                     GAS<p>
             </td>
         </tr>
         <tr>
             <td>
-                <img src="~/images/Cooking/lighter.png" alt="" style="width: 200px; height: 200px;" runat="server" /><br>
+                <img src="~/images/Cooking/lighter.png" alt="lighter" style="width: 200px; height: 200px;" runat="server" /><br>
                 <p>
                     LIGHTER<p>
             </td>
             <td>
-                <img src="~/images/Cooking/piringset.png" alt="" style="width: 200px; height: 200px;" runat="server" /><br>
+                <img src="~/images/Cooking/piringset.png" alt="plates" style="width: 200px; height: 200px;" runat="server" /><br>
                 <p>
                     SET OF PLATES<p>
             </td>
             <td>
-                <img src="~/images/Cooking/stove.png" alt="" style="width: 200px; height: 200px;" runat="server" /><br>
+                <img src="~/images/Cooking/stove.png" alt="stove" style="width: 200px; height: 200px;" runat="server" /><br>
                 <p>
                     STOVE<p>
             </td>

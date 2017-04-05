@@ -13,21 +13,21 @@
         <table>
             <tr>
                 <td>
-                    <img src="~/images/equipment/tent.png" alt="" style="width: 300px; height: 200px;" runat="server"><br>
+                    <img src="~/images/equipment/tent.png" alt="tent" style="width: 300px; height: 200px;" runat="server"><br>
                     <p>TENT<p>
                 </td>
                 <td>
-                    <img src="~/images/equipment/scoop.png" alt="" style="width: 300px; height: 200px;" runat="server"><br>
+                    <img src="~/images/equipment/scoop.png" alt="scoop" style="width: 300px; height: 200px;" runat="server"><br>
                     <p>SCOOP<p>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <img src="~/images/equipment/compass.png" alt="" style="width: 200px; height: 200px;" runat="server"><br>
+                    <img src="~/images/equipment/compass.png" alt="compass" style="width: 200px; height: 200px;" runat="server"><br>
                     <p>COMPASS<p>
                 </td>
                 <td>
-                    <img src="~/images/equipment/knife.png" alt="" style="width: 200px; height: 200px;" runat="server"><br>
+                    <img src="~/images/equipment/knife.png" alt="knife" style="width: 200px; height: 200px;" runat="server"><br>
                     <p>KNIFE<p>
                 </td>
             </tr>

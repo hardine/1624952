@@ -11,7 +11,7 @@
 <input type="submit" value="Submit"/> </br>
 </form>
 </div>
-<img src="images/map.PNG" alt="" style="width:600px;height:300px;"/>
+<img src="images/map.PNG" alt="contact map" style="width:600px;height:300px;"/>
     <div id="contactdetails">
         <h2>Contact Us</h2>
     <p>ot-doors@hotmail.com</p></br>

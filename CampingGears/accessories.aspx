@@ -13,34 +13,34 @@
     <table>
         <tr>
             <td>
-                <img src="~/images/Personal/boots.png" alt="" style="width: 200px; height: 200px;" runat="server" /><br>
+                <img src="~/images/Personal/boots.png" alt="boots" style="width: 200px; height: 200px;" runat="server" /><br>
                 <p>
                     BOOTS<p>
             </td>
             <td>
-                <img src="~/images/Personal/hats.png" alt="" style="width: 200px; height: 200px;" runat="server" /><br>
+                <img src="~/images/Personal/hats.png" alt="hat" style="width: 200px; height: 200px;" runat="server" /><br>
                 <p>
                     HAT<p>
             </td>
             <td>
-                <img src="~/images/Personal/insect repellent.png" alt="" style="width: 200px; height: 200px;" runat="server" /><br>
+                <img src="~/images/Personal/insect repellent.png" alt="insect repellent" style="width: 200px; height: 200px;" runat="server" /><br>
                 <p>
                     INSECT REPELLENT<p>
             </td>
         </tr>
         <tr>
             <td>
-                <img src="~/images/Personal/shoe.png" alt="" style="width: 200px; height: 200px;" runat="server" /><br>
+                <img src="~/images/Personal/shoe.png" alt="shoe" style="width: 200px; height: 200px;" runat="server" /><br>
                 <p>
                     SHOE<p>
             </td>
             <td>
-                <img src="~/images/Personal/sunblock.png" alt="" style="width: 200px; height: 200px;" runat="server" /><br>
+                <img src="~/images/Personal/sunblock.png" alt="sunblock cream" style="width: 200px; height: 200px;" runat="server" /><br>
                 <p>
                     SUN BLOCK<p>
             </td>
 <td>
-               <img src="~/images/equipment/knife.png" alt="" style="width: 200px; height: 200px;" runat="server" /><br />
+               <img src="~/images/equipment/knife.png" alt="knife" style="width: 200px; height: 200px;" runat="server" /><br />
                 <p>KNIFE</p>
             </td>
             

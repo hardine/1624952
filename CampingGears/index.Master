@@ -5,6 +5,7 @@
 <head runat="server">
     <title>Camping Gears</title>
     <link href="~//css/Styles.css" rel="stylesheet" type="text/css" runat="server" />
+    <script src="js/map.js" language="javascript" type="text/javascript"></script>
     <asp:ContentPlaceHolder ID="head" runat="server">  
     </asp:ContentPlaceHolder>
 </head>

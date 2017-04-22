@@ -136,10 +136,10 @@ border: 2px solid #000000;
 width:300px;
 }
 
-#message { 
+.messagebox { 
 border: 2px solid #000000;
 width:400px;
-height:120px;
+height:91px;
 }
 
 input[type="submit"] {

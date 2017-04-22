@@ -98,6 +98,7 @@
     <Content Include="images\Personal\insect repellent.png" />
     <Content Include="images\Personal\shoe.png" />
     <Content Include="images\Personal\sunblock.png" />
+    <Content Include="js\map.js" />
     <Content Include="kitchen.aspx" />
     <Content Include="packages.config" />
     <Content Include="index.Master" />

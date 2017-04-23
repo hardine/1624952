@@ -14,12 +14,13 @@
                 <asp:TextBox ID="email" runat="server" TextMode="SingleLine" Height="16px" Width="281px"></asp:TextBox>
                 <br />
                 <asp:Label ID="lblMessage" runat="server" Text="Comments:" AssociatedControlID="txtMessageBody"></asp:Label><br />
-                <asp:TextBox ID="txtMessageBody" runat="server" TextMode="MultiLine" Height="91px" Width="379px"></asp:TextBox>
+                <asp:TextBox ID="txtMessageBody" runat="server" TextMode="MultiLine" BorderWidth="2px" Height="91px" Width="379px" ></asp:TextBox>
             </div>
             <div>
-                <asp:Button ID="btnSend" runat="server" Text="Submit" OnClick="btnSend_Click" />
+                <asp:Button ID="btnSend" runat="server" Text="Submit" OnClick="btnSend_Click" /><br />
             </div>
         </form>
+        <asp:Label ID="erroralert" runat="server" CssClass="errormsg"></asp:Label>
     </div>
 
     <%--<img src="images/map.PNG" alt="contact map" style="width:600px;height:300px;"/>--%>

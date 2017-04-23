@@ -13,7 +13,6 @@ namespace CampingGears
 {
     public partial class contact : System.Web.UI.Page
     {
-        public static object ValidEmailRegex { get; private set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -61,6 +60,8 @@ namespace CampingGears
             else
             {
                 submitmessage();
+                submitConfirmation();
+                erroralert.Text = "Thank you! your comment has been successfully delivered!";
             }
         }
 
@@ -86,7 +87,9 @@ namespace CampingGears
             MailMessage msg = new MailMessage("c05027lcb@gmail.com", "hardinephm@hotmail.com");
 
             msg.Subject = "Mail from Camping Gears website";
-            msg.Body = "Name of Sender: " + name.Text + Environment.NewLine +  "Email of Sender: " + email.Text + Environment.NewLine+Environment.NewLine +"Comments: " + Environment.NewLine + txtMessageBody.Text;
+            msg.Body = "Name of Sender: " + name.Text + Environment.NewLine +  
+                "Email of Sender: " + email.Text + Environment.NewLine+Environment.NewLine 
+                +"Comments: " + Environment.NewLine + txtMessageBody.Text;
             try
             {
                 client.Send(msg);
@@ -104,5 +107,37 @@ namespace CampingGears
             txtMessageBody.Text = "";
         }
 
+        public void submitConfirmation()
+        {
+            //create a new smtp client (this will connect to the mail server)
+            SmtpClient client = new SmtpClient();
+            client.Host = "smtp.gmail.com";
+            client.Port = 587;
+            client.EnableSsl = true;
+
+            System.Net.NetworkCredential userpass = new System.Net.NetworkCredential();
+            userpass.UserName = "c05027lcb@gmail.com";
+            userpass.Password = "P@55word1";
+
+            client.Credentials = userpass;
+            MailMessage msg1 = new MailMessage("c05027lcb@gmail.com", email.Text);
+
+            msg1.Subject = "Confirmation Mail from Camping Gears website";
+            string confirmaationtxt = "Dear " + name.Text + "," + Environment.NewLine + Environment.NewLine +
+               "Thank you! Your comments has been successfully delivered." + Environment.NewLine + Environment.NewLine +
+               "for any enquiries please contact us at +6732224443 or email to ot-doors@hotmail.com " + Environment.NewLine + Environment.NewLine +
+               "Warm Regards," + Environment.NewLine + "Ot-Doors Company";
+            msg1.Body = confirmaationtxt;
+            try
+            {
+                client.Send(msg1);
+            }
+
+
+            catch (Exception err)
+            {
+                Debug.WriteLine("Exception Message: " + err.Message);
+            }
+        }
     }
 }

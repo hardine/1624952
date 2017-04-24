@@ -1,17 +1,9 @@
 var map;
 
-function checkjavascripts(){
-    if (!Modernizr.geolocation) {
-        alert("This browser doesn't support the Geolocation API.");
-        return;
-    }
-    navigator.geolocation.getCurrentPosition(initmap, OnError);
-}
-
 function initmap() {
     var lcb = { lat: 4.8857, lng: 114.9317 }
 	var mapdetails= {
-		zoom:12,
+		zoom:15,
 		center: lcb,
 	    mapTypeId:google.maps.MapTypeId.ROADMAP
 	};
@@ -19,7 +11,7 @@ function initmap() {
 
 	var lcblocation = new google.maps.Circle({
 	    center: lcb,
-	    radius: 2000,
+	    radius: 200,
 	    strokeColor: "#0000FF",
 	    strokeOpacity: 0.8,
 	    strokeWeight: 2,
@@ -30,16 +22,10 @@ function initmap() {
 	var marker = new google.maps.Marker({
 		position:lcb,
 		map: map,
-		title:"Ot-Doors Company"
+		title: "Ot-Doors Company",
+	    label: "Ot-Doors Company"
 	});
 
 	lcblocation.setMap(map);
-}
-
-function OnError(err) {
-    alert(err.message);
-    var calloutOptions = { title: "Location Information", description: "This is the default location." };
-    var defaultPos = { lat: 4.8857, lng: 114.9317 } ;
-    var callout = new Microsoft.Maps.Infobox(defaultPos, calloutOptions);
-    map.entities.push(callout);
+	
 }

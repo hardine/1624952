@@ -13,10 +13,10 @@ namespace CampingGears
 {
     public partial class contact : System.Web.UI.Page
     {
-
+        
         protected void Page_Load(object sender, EventArgs e)
         {
-      
+           
         }
 
         protected void btnSend_Click(object sender, EventArgs e)
@@ -28,6 +28,7 @@ namespace CampingGears
         {
             int errorflag = 0;
             string errormessage = "";
+
             if (name.Text=="" || name.Text == null)
             {
                 errorflag = 1;
@@ -100,11 +101,6 @@ namespace CampingGears
             {
                 Debug.WriteLine("Exception Message: " + err.Message);
             }
-
-            //clear the message box (a better option would be to notify the user that
-            //the email has been sent - either by displaying a message (e.g. a literal)
-            //or by redirecting them to a 'Message sent' page
-            txtMessageBody.Text = "";
         }
 
         public void submitConfirmation()

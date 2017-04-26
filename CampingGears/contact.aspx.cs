@@ -81,11 +81,11 @@ namespace CampingGears
             client.EnableSsl = true;
 
             System.Net.NetworkCredential userpass = new System.Net.NetworkCredential();
-            userpass.UserName = "c05027lcb@gmail.com";
-            userpass.Password = "P@55word1";
+            userpass.UserName = "otdoorscompany@gmail.com";
+            userpass.Password = "p@ssw0rd1234";
 
             client.Credentials = userpass;
-            MailMessage msg = new MailMessage("c05027lcb@gmail.com", "hardinephm@hotmail.com");
+            MailMessage msg = new MailMessage("otdoorscompany@gmail.com", "hardinephm@hotmail.com");
 
             msg.Subject = "Mail from Camping Gears website";
             msg.Body = "Name of Sender: " + name.Text + Environment.NewLine +  
@@ -112,11 +112,13 @@ namespace CampingGears
             client.EnableSsl = true;
 
             System.Net.NetworkCredential userpass = new System.Net.NetworkCredential();
-            userpass.UserName = "c05027lcb@gmail.com";
-            userpass.Password = "P@55word1";
+            userpass.UserName = "otdoorscompany@gmail.com";
+            userpass.Password = "p@ssw0rd1234";
 
             client.Credentials = userpass;
-            MailMessage msg1 = new MailMessage("c05027lcb@gmail.com", email.Text);
+            MailMessage msg1 = new MailMessage("otdoorscompany@gmail.com", email.Text);
+            // c05027lcb @gmail.com
+            //P@55word1
 
             msg1.Subject = "Confirmation Mail from Camping Gears website";
             string confirmaationtxt = "Dear " + name.Text + "," + Environment.NewLine + Environment.NewLine +

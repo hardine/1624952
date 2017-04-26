@@ -25,7 +25,7 @@
     <div id="map" style="width: 600px; height: 250px;"></div>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjdLLOCyBoD3rOuiJcVJhAARekXWkemOc&amp;callback=initmap"></script>
     <noscript>
-        <img width="600" height="280" src="https://maps.googleapis.com/maps/api/staticmap?center=laksamana+college&zoom=17&amp;scale=false&amp;size=545x300&amp;maptype=roadmap&amp;format=png&amp;visual_refresh=true&amp;markers=icon:OT DOORS COMPANY%7Cshadow:true%7Claksamana+college" alt="Google Map of OT-DOORS COMPANY, Bangunan A, Kampong Jaya Setia<" />
+        <img width="600" height="280" src="https://maps.googleapis.com/maps/api/staticmap?center=laksamana+college&amp;zoom=17&amp;scale=false&amp;size=545x300&amp;maptype=roadmap&amp;format=png&amp;visual_refresh=true&amp;markers=icon:OT DOORS COMPANY%7Cshadow:true%7Claksamana+college" alt="Google Map of OT-DOORS COMPANY, Bangunan A, Kampong Jaya Setia" />
     </noscript>
     <div id="contactdetails">
         <h2>Contact Us</h2>

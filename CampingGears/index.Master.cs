@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNet.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,5 +14,13 @@ namespace CampingGears
         {
 
         }
+
+        protected void logoff_click(object sender, EventArgs e)
+        {
+            var AutheticationManager = HttpContext.Current.GetOwinContext().Authentication;
+            AutheticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+            Response.Redirect("default.aspx");
+        }
+
     }
 }

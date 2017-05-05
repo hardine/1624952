@@ -1,5 +1,4 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="index.master.cs" Inherits="CampingGears.index" %>
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
@@ -23,8 +22,18 @@
                 <a href="#about">About</a>
             </div>
              <div id="login">
-                <p><a href=""> | Login |</a></p>
-                <p><a href="">| Register </a></p>
+                 <% if (Request.IsAuthenticated)
+                        { %>
+                               <p><%--<a id="logoff" href="#" runat="server" onserverclick="logoff_click">| Logoff |</a>--%></p>
+                     
+                            <p><a href="#" id="logoff" onserverclick="logoff_click" runat="server"> | Logoff |</a></p>
+                      <%   }
+                        else
+                        { %>
+                              <p><a href="Login.aspx"> | Login |</a></p>
+                              <p><a href="Register.aspx">| Register </a></p>
+                       <%   }
+                     %>
                  <br/>
                  </div>
         </div>

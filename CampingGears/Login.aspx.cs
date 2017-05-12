@@ -24,7 +24,17 @@ namespace CampingGears
             var user = userManager.Find(Lusername.Text, Lpassword.Text);
 
             if(user != null){
-                LogUserIn(userManager, user);
+
+                if (Lusername.Text.Equals ("Admin")|| (Lusername.Text.Equals("admin")))
+                {
+                    LogUserIn(userManager, user);
+                    Response.Redirect("AdminViewProduct.aspx");
+                }else
+                {
+                    LogUserIn(userManager, user);
+                    Response.Redirect("default.aspx");
+                }
+
             }
             else{
 

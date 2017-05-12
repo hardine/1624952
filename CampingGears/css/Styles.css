@@ -246,3 +246,39 @@ font-size: 10px;
     width:100%;
 	height:300px;
 }
+#logdiv a{
+	font-size: 15px; 
+	font-family: "Roboto", sans-serif;
+    color: #000;
+    text-align:Left;
+	margin:0 auto;    
+	display:block;
+}
+.commandstye{
+    font-size: 15px; 
+	font-family: "Roboto", sans-serif;
+    color: #000;
+     text-align:center;
+	margin:0 auto;    
+	display:block;
+}
+
+.prodimages{
+    width:320px;
+	height:320px;
+}
+.productimages{
+    width:300px;
+	height:200px;
+}
+.setimage{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    cursor: pointer;
+}

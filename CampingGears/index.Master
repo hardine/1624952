@@ -17,15 +17,13 @@
             <h1>CAMPING GEARS</h1>
             <div id="navigation">
                 <a href="default.aspx">Home</a>
-                <a href="#product">Product</a>
+                <a href="AdminViewProduct.aspx">Product</a>
                 <a href="contact.aspx">Contact</a>
                 <a href="#about">About</a>
             </div>
              <div id="login">
                  <% if (Request.IsAuthenticated)
                         { %>
-                               <p><%--<a id="logoff" href="#" runat="server" onserverclick="logoff_click">| Logoff |</a>--%></p>
-                     
                             <p><a href="#" id="logoff" onserverclick="logoff_click" runat="server"> | Logoff |</a></p>
                       <%   }
                         else
@@ -58,7 +56,7 @@
         <br/>
         <a href="http://validator.w3.org/check?uri=referer">Validate HTML</a>
         <a href="http://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
-        <a href="#Admin">Admin Login</a>
+        <a href="Login.aspx">Admin Login</a>
         <br/>
          <p>© 2017 OT-DOORS CO ALL RIGHT RESERVED.</p>
         <p>

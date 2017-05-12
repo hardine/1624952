@@ -16,11 +16,17 @@
                 <asp:TextBox ID="pword" runat="server" TextMode="Password" BorderWidth="2px" Height="16px" Width="281px"></asp:TextBox>
                 <br />
                 <br />
+                <asp:Label ID="confirmpassword" runat="server" Text="Confirm Password:" AssociatedControlID="cpword"></asp:Label><br />
+                <asp:TextBox ID="cpword" runat="server" TextMode="Password" BorderWidth="2px" Height="16px" Width="281px"></asp:TextBox>
+                <br />
+                <br />
               </div>
             <div>
                 <asp:Button ID="btnSend" runat="server" Text="Register" OnClick="btnSend_Click" /><br />
             </div>
         </form>
+        <div id="logdiv" >
+        <p><a href="Login.aspx" >Login</a></p></div>
         <asp:Label ID="erralert" runat="server" CssClass="errormsg"></asp:Label>
     </div>
 </asp:Content>

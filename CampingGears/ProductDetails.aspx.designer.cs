@@ -10,87 +10,123 @@
 namespace CampingGears {
     
     
-    public partial class Register {
+    public partial class ProductDetails {
         
         /// <summary>
-        /// RegisterForm control.
+        /// productform control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm RegisterForm;
+        protected global::System.Web.UI.HtmlControls.HtmlForm productform;
         
         /// <summary>
-        /// lablusername control.
+        /// productnamelbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lablusername;
+        protected global::System.Web.UI.WebControls.Label productnamelbl;
         
         /// <summary>
-        /// uname control.
+        /// productName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox uname;
+        protected global::System.Web.UI.WebControls.TextBox productName;
         
         /// <summary>
-        /// lablpassword control.
+        /// categorylbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lablpassword;
+        protected global::System.Web.UI.WebControls.Label categorylbl;
         
         /// <summary>
-        /// pword control.
+        /// categorydropdown control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox pword;
+        protected global::System.Web.UI.WebControls.DropDownList categorydropdown;
         
         /// <summary>
-        /// confirmpassword control.
+        /// Descriptionlbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label confirmpassword;
+        protected global::System.Web.UI.WebControls.Label Descriptionlbl;
         
         /// <summary>
-        /// cpword control.
+        /// description control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox cpword;
+        protected global::System.Web.UI.WebControls.TextBox description;
         
         /// <summary>
-        /// btnSend control.
+        /// stocklbl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSend;
+        protected global::System.Web.UI.WebControls.Label stocklbl;
         
         /// <summary>
-        /// erralert control.
+        /// stock control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label erralert;
+        protected global::System.Web.UI.WebControls.TextBox stock;
+        
+        /// <summary>
+        /// pricelbl control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label pricelbl;
+        
+        /// <summary>
+        /// Price control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Price;
+        
+        /// <summary>
+        /// addproduct_button control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button addproduct_button;
+        
+        /// <summary>
+        /// Lerroralert control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Lerroralert;
     }
 }

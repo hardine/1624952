@@ -22,17 +22,25 @@ namespace CampingGears
             //create user store and user manager
             var UserStore = new UserStore<IdentityUser>(identityDbContext);
             var manager = new UserManager<IdentityUser>(UserStore);
+            //check for password
+            if (pword.Text.Equals(cpword.Text)) { 
             //Create User
             var user = new IdentityUser() { UserName = uname.Text };
             IdentityResult result = manager.Create(user, pword.Text);
-            if (result.Succeeded)
-            {
-
+                if (result.Succeeded)
+                {
+                    erralert.Text = "User " + uname.Text + " is successfully created, please login to proceed.";
+                }
+                else
+                {
+                    erralert.Text = "An Error has occured: " + result.Errors.FirstOrDefault();
+                }
             }
             else
             {
-                erralert.Text = "An Error has occured: " + result.Errors.FirstOrDefault();
+                erralert.Text = "Password and Confirm Password do not match!";
             }
+            
         }
     }
 }

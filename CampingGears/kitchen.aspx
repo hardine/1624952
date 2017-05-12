@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/index.Master" AutoEventWireup="true" CodeBehind="kitchen.aspx.cs" Inherits="CampingGears.kitchen" %>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <h2>Search Product</h2>
-            <form action="search">
+            <form id="search" runat="server">
                 Search:
                 <input type="text" name="search" value="" />
                 <input type="submit" value="Search" />

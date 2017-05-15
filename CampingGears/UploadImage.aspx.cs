@@ -22,7 +22,7 @@ namespace CampingGears
             //code to check correct file tyoe
             //get the id from the query string (keeping it as a string is ok in this case)
             string productId = Request.QueryString["ProductID"];
-            string filename = productId + ".jpg";
+            string filename = productId + ".png";
             string savelocation = Server.MapPath("~/ProductImages/" + filename);
             ImageFileUploadControl.SaveAs(savelocation);
 

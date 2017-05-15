@@ -20,10 +20,9 @@ namespace CampingGears
                 Response.Redirect("default.aspx");
             }
         }
-
-        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        protected void add_click(object sender, EventArgs e)
         {
-
+            Response.Redirect("ProductDetails.aspx");
         }
     }
 }

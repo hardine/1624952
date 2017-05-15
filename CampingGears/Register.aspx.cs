@@ -18,7 +18,7 @@ namespace CampingGears
         protected void btnSend_Click(object sender, EventArgs e)
         {
             //create a dbcontext that specified the connection string
-            var identityDbContext = new IdentityDbContext("DBConnection");
+            var identityDbContext = new IdentityDbContext("camping_gears");
             //create user store and user manager
             var UserStore = new UserStore<IdentityUser>(identityDbContext);
             var manager = new UserManager<IdentityUser>(UserStore);

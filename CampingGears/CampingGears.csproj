@@ -119,18 +119,9 @@
   <ItemGroup>
     <Content Include="accessories.aspx" />
     <Content Include="AdminViewProduct.aspx" />
-    <Content Include="CampingGearsModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CampingGearsModel.edmx</DependentUpon>
-      <LastGenOutput>CampingGearsModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="CampingGearsModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>CampingGearsModel.edmx</DependentUpon>
-      <LastGenOutput>CampingGearsModel.cs</LastGenOutput>
-    </Content>
     <Content Include="contact.aspx" />
     <Content Include="css\Styles.css" />
+    <Content Include="EditProductDetails.aspx" />
     <Content Include="equipment.aspx" />
     <Content Include="default.aspx" />
     <Content Include="images\Cooking\firestarter.png" />
@@ -168,13 +159,6 @@
     <Content Include="Login.aspx" />
     <Content Include="packages.config" />
     <Content Include="index.Master" />
-    <EntityDeploy Include="CampingGearsModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>CampingGearsModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="CampingGearsModel.edmx.diagram">
-      <DependentUpon>CampingGearsModel.edmx</DependentUpon>
-    </Content>
     <None Include="Properties\PublishProfiles\1624952.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -205,33 +189,6 @@
     <Compile Include="AdminViewProduct.aspx.designer.cs">
       <DependentUpon>AdminViewProduct.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AspNetRole.cs">
-      <DependentUpon>CampingGearsModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AspNetUser.cs">
-      <DependentUpon>CampingGearsModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AspNetUserClaim.cs">
-      <DependentUpon>CampingGearsModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AspNetUserLogin.cs">
-      <DependentUpon>CampingGearsModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CampingGearsModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CampingGearsModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CampingGearsModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CampingGearsModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CampingGearsModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CampingGearsModel.edmx</DependentUpon>
-    </Compile>
     <Compile Include="contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -239,8 +196,12 @@
     <Compile Include="contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="C__MigrationHistory.cs">
-      <DependentUpon>CampingGearsModel.tt</DependentUpon>
+    <Compile Include="EditProductDetails.aspx.cs">
+      <DependentUpon>EditProductDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditProductDetails.aspx.designer.cs">
+      <DependentUpon>EditProductDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="equipment.aspx.cs">
       <DependentUpon>equipment.aspx</DependentUpon>
@@ -273,9 +234,6 @@
     <Compile Include="kitchen.aspx.designer.cs">
       <DependentUpon>kitchen.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Product.cs">
-      <DependentUpon>CampingGearsModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="ProductDetails.aspx.cs">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -299,18 +257,12 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
-    <Compile Include="sysdiagram.cs">
-      <DependentUpon>CampingGearsModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="UploadImage.aspx.cs">
       <DependentUpon>UploadImage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UploadImage.aspx.designer.cs">
       <DependentUpon>UploadImage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="User.cs">
-      <DependentUpon>CampingGearsModel.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

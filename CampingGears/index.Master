@@ -17,9 +17,11 @@
             <h1>CAMPING GEARS</h1>
             <div id="navigation">
                 <a href="default.aspx">Home</a>
-                <a href="AdminViewProduct.aspx">Product</a>
                 <a href="contact.aspx">Contact</a>
-                <a href="#about">About</a>
+              <%    if (Request.IsAuthenticated)
+            { %>
+                <a href="AdminViewProduct.aspx">Administrator</a>
+                 <%   }%>
             </div>
              <div id="login">
                  <% if (Request.IsAuthenticated)
@@ -38,10 +40,10 @@
 
         <div id="Categories">
 
-            <h4>CATEGORIES:</h4>
-            <a href="equipment.aspx">Camping Equipments</a><br/>
-            <a href="kitchen.aspx">Kitchen Equipments</a><br/>
-            <a href="accessories.aspx">Camping Accesssories</a>
+            <h4>ABOUT:</h4>
+            <h4>Camping Gears is online retail selling camping and outdoors accessories.</h4><br />
+            <h4>this company began its operation since January 2017.</h4> <br />
+            <h4>Contact us at ot-doors@hotmail.com or call +6732224443</h4>
         </div>
 
         <div id="content">

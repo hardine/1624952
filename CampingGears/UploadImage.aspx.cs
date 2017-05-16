@@ -12,9 +12,13 @@ namespace CampingGears
         protected void Page_Load(object sender, EventArgs e)
         {
             string productId = Request.QueryString["ProductID"];
-            string filename = productId + ".jpg";
-            //for missing alternate text and dimension
+            if ((productId=="" )||(productId == null)){
+                CurrentImage.ImageUrl = "~/ProductImages/default.png";
+            }
+            else{ 
+            string filename = productId + ".png";
             CurrentImage.ImageUrl = "~/ProductImages/" + filename;
+            }
         }
 
         protected void submitbutton_Click(object sender, EventArgs e)

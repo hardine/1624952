@@ -10,7 +10,7 @@
 namespace CampingGears {
     
     
-    public partial class ProductDetails {
+    public partial class viewindividualproduct {
         
         /// <summary>
         /// productform control.
@@ -20,6 +20,15 @@ namespace CampingGears {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm productform;
+        
+        /// <summary>
+        /// CurrentImage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image CurrentImage;
         
         /// <summary>
         /// productnamelbl control.
@@ -38,24 +47,6 @@ namespace CampingGears {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox productName;
-        
-        /// <summary>
-        /// categorylbl control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label categorylbl;
-        
-        /// <summary>
-        /// categorydropdown control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList categorydropdown;
         
         /// <summary>
         /// Descriptionlbl control.
@@ -121,13 +112,13 @@ namespace CampingGears {
         protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
-        /// addproduct_button control.
+        /// addtocart_button control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button addproduct_button;
+        protected global::System.Web.UI.WebControls.Button addtocart_button;
         
         /// <summary>
         /// Lerroralert control.

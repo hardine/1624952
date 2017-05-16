@@ -34,8 +34,11 @@ namespace CampingGears
             {
                 Console.WriteLine(e.ToString());
             }
+    }
+        protected void back_button_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AdminViewProduct.aspx");
         }
-
         protected void addproduct_button_Click(object sender, EventArgs e)
         {
             string prodName = productName.Text;

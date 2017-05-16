@@ -23,8 +23,15 @@ namespace CampingGears
             opendbconnection();
             productId = Request.QueryString["ProductID"];
             
-            string filename = productId + ".png";
-            CurrentImage.ImageUrl = "~/ProductImages/" + filename;
+            if ((productId == "") || (productId == null))
+            {
+                CurrentImage.ImageUrl = "~/ProductImages/default.png";
+            }
+            else
+            {
+                string filename = productId + ".png";
+                CurrentImage.ImageUrl = "~/ProductImages/" + filename;
+            }
 
             if (string.IsNullOrWhiteSpace(stock.Text))
             {
@@ -52,7 +59,12 @@ namespace CampingGears
                 Console.WriteLine(ex.ToString());
             }
         }
-       
+        protected void back_button_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AdminViewProduct.aspx");
+        }
+
+
         protected void editproduct_button_Click(object sender, EventArgs e)
         {
             uprodName = productName.Text;

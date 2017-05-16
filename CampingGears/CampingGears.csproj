@@ -117,42 +117,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="accessories.aspx" />
     <Content Include="AdminViewProduct.aspx" />
     <Content Include="contact.aspx" />
     <Content Include="css\Styles.css" />
     <Content Include="EditProductDetails.aspx" />
-    <Content Include="equipment.aspx" />
     <Content Include="default.aspx" />
-    <Content Include="images\Cooking\firestarter.png" />
-    <Content Include="images\Cooking\fuelbottle.png" />
-    <Content Include="images\Cooking\gas.png" />
-    <Content Include="images\Cooking\lighter.png" />
-    <Content Include="images\Cooking\piringset.png" />
-    <Content Include="images\Cooking\stove.png" />
-    <Content Include="images\Cooking\uttensil.png" />
-    <Content Include="images\equipment\campingbag.png" />
-    <Content Include="images\equipment\chair.png" />
-    <Content Include="images\equipment\compass.png" />
-    <Content Include="images\equipment\electro-latern.png" />
-    <Content Include="images\equipment\knife.png" />
-    <Content Include="images\equipment\mat.png" />
-    <Content Include="images\equipment\rope.png" />
-    <Content Include="images\equipment\scoop.png" />
-    <Content Include="images\equipment\sleepingbag.png" />
-    <Content Include="images\equipment\stick.png" />
-    <Content Include="images\equipment\tent.png" />
-    <Content Include="images\equipment\torchlight.png" />
-    <Content Include="images\equipment\whitsle.png" />
     <Content Include="images\logo.PNG" />
     <Content Include="images\map.PNG" />
-    <Content Include="images\Personal\boots.png" />
-    <Content Include="images\Personal\hats.png" />
-    <Content Include="images\Personal\insect repellent.png" />
-    <Content Include="images\Personal\shoe.png" />
-    <Content Include="images\Personal\sunblock.png" />
     <Content Include="js\map.js" />
-    <Content Include="kitchen.aspx" />
     <Content Include="ProductDetails.aspx" />
     <Content Include="ProductImages\map.PNG" />
     <Content Include="Register.aspx" />
@@ -170,18 +142,12 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="UploadImage.aspx" />
+    <Content Include="viewindividualproduct.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="accessories.aspx.cs">
-      <DependentUpon>accessories.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="accessories.aspx.designer.cs">
-      <DependentUpon>accessories.aspx</DependentUpon>
-    </Compile>
     <Compile Include="AdminViewProduct.aspx.cs">
       <DependentUpon>AdminViewProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -203,13 +169,6 @@
     <Compile Include="EditProductDetails.aspx.designer.cs">
       <DependentUpon>EditProductDetails.aspx</DependentUpon>
     </Compile>
-    <Compile Include="equipment.aspx.cs">
-      <DependentUpon>equipment.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="equipment.aspx.designer.cs">
-      <DependentUpon>equipment.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -226,13 +185,6 @@
     </Compile>
     <Compile Include="index.Master.designer.cs">
       <DependentUpon>index.Master</DependentUpon>
-    </Compile>
-    <Compile Include="kitchen.aspx.cs">
-      <DependentUpon>kitchen.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="kitchen.aspx.designer.cs">
-      <DependentUpon>kitchen.aspx</DependentUpon>
     </Compile>
     <Compile Include="ProductDetails.aspx.cs">
       <DependentUpon>ProductDetails.aspx</DependentUpon>
@@ -263,6 +215,13 @@
     </Compile>
     <Compile Include="UploadImage.aspx.designer.cs">
       <DependentUpon>UploadImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="viewindividualproduct.aspx.cs">
+      <DependentUpon>viewindividualproduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewindividualproduct.aspx.designer.cs">
+      <DependentUpon>viewindividualproduct.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

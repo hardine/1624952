@@ -21,6 +21,7 @@
 <asp:TextBox ID="stock" runat="server" TextMode="SingleLine" Height="16px" Width="300px"></asp:TextBox><br/><br/>
      <asp:Label ID="pricelbl" runat="server" Text="Price:"></asp:Label><br/>
 <asp:TextBox ID="Price" runat="server" TextMode="SingleLine" Height="16px" Width="300px"></asp:TextBox><br/><br/>
+         <asp:Button ID="Button1" runat="server" Text="Back" OnClick="back_button_Click" />
      <asp:Button ID="editproduct_button" runat="server" Text="Update Product" OnClick="editproduct_button_Click" />
 </form>
     <asp:Label ID="Lerroralert" runat="server" CssClass="errormsg"></asp:Label>

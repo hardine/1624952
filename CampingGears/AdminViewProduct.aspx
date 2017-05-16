@@ -6,11 +6,11 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p><a href="#" id="AddProduct" onserverclick="add_click" runat="server" class="newprodlink" style="color: #000000; text-align: left; font-style: normal;">Add New Product</a></p><br/>
     <form id="form1" runat="server">
-        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="ProductID" DataSourceID="SqlDataSource1" CellSpacing="-1" GridLines="None" Height="175px" Width="465px">
+        <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AutoGenerateColumns="False" DataKeyNames="ProductID" DataSourceID="SqlDataSource1" CellSpacing="-1" GridLines="None" Height="175px" Width="604px">
              <Columns>
                      <asp:TemplateField>
                      <ItemTemplate>
-                           <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# String.Format("EditProductDetails.aspx?ProductID={0}&ProductName={1}&Category={2}&Description={3}&price={4}&Stock={5}",Eval("ProductID"),Eval("ProductName"),Eval("Category"),Eval("Description"),Eval("price"),Eval("Stock")) %>' Text="Update" CssClass="setimage"></asp:HyperLink>
+                           <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl='<%# String.Format("EditProductDetails.aspx?ProductID={0}&ProductName={1}&Category={2}&Description={3}&price={4}&Stock={5}",Eval("ProductID"),Eval("ProductName"),Eval("Category"),Eval("Description"),Eval("price"),Eval("Stock")) %>' Text="Edit" CssClass="setimage"></asp:HyperLink>
                      </ItemTemplate>
                  </asp:TemplateField>
                 <asp:TemplateField ShowHeader="False">

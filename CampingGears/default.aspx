@@ -12,7 +12,7 @@
         <table>
             <tr>
                 <td>
-                    <asp:ImageButton ID="Image1" runat="server" postbackurl='viewindividualproduct.aspx?ProductID=1' CssClass="productimages" OnClick="Image1_Click" />
+                    <asp:ImageButton ID="Image1" runat="server" postbackurl='viewindividualproduct.aspx?ProductID=1' CssClass="productimages"/>
                     <%--<img src="~/images/equipment/tent.png" alt="tent" style="width: 300px; height: 200px;" runat="server"/>--%><br/>
                     <p>TENT</p>
                 </td>

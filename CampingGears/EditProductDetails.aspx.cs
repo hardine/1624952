@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 
 namespace CampingGears
@@ -97,7 +92,5 @@ namespace CampingGears
             string savelocation = Server.MapPath("~/ProductImages/" + filename);
             ImageFileUploadControl.SaveAs(savelocation);
         }
-
-
     }
 }

@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/index.Master" AutoEventWireup="true" CodeBehind="AdminViewProduct.aspx.cs" Inherits="CampingGears.AdminViewProduct" %>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <h2>View Product List</h2>
 </asp:Content>

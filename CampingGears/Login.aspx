@@ -1,5 +1,4 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/index.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="CampingGears.Login" %>
-
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
     <h2>Login</h2>
     <br />
@@ -21,7 +20,6 @@
                 <asp:Button ID="btnSend" runat="server" Text="Login" OnClick="btnSend_Click" /><br />
             </div>
         </form>
-        
         <asp:Label ID="Lerroralert" runat="server" CssClass="errormsg"></asp:Label>
     </div>
 </asp:Content>

@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace CampingGears
 {
@@ -14,9 +9,6 @@ namespace CampingGears
         SqlConnection myConnection;
         protected void Page_Load(object sender, EventArgs e)
         {
-            //string productId = "2";
-            //Request.QueryString["ProductID"];
-            //string filename = productId + ".png";
             string Tent = "1.png";
             string sleepingbag = "2.png";
             string knife = "5.png";
@@ -47,7 +39,7 @@ namespace CampingGears
         protected void search_button_Click(object sender, EventArgs e)
         {
             string productName = Request.QueryString["ProductName"];
-            string query = "SELECT * FROM [Product] WHERE [ProductName] LIKE '%"+ productName + "%'";
+            string query = "SELECT * FROM [Product] WHERE [ProductName] LIKE '%" + productName + "%'";
             sqlcmd = new SqlCommand(query, myConnection);
             //sqlcmd.ExecuteNonQuery();
             using (SqlDataReader dr = sqlcmd.ExecuteReader())
@@ -57,51 +49,6 @@ namespace CampingGears
                     string treatment = dr[0].ToString();
                 }
             }
-        }
-
-        public void productstock()
-        {
-            string ReturnedProductName = null;
-            string productID = Request.QueryString["productID"];
-            string query = "SELECT [ProductName] FROM [Product] WHERE [ProductID] =" + productID;
-            sqlcmd = new SqlCommand(query, myConnection);
-            if (sqlcmd.ExecuteScalar() == null)
-            {
-                ReturnedProductName = Convert.ToString(sqlcmd.ExecuteScalar());
-            }
-
-            if ((ReturnedProductName != null) || (ReturnedProductName != ""))
-            {
-
-            }
-        }
-
-        public void checkproductwithstock()
-        {
-            int productID = 0;
-            string query = "SELECT [productID] FROM [Product] WHERE [Stock] > 0";
-            using (var command = new SqlCommand(query, myConnection))
-            {
-                using (var reader = command.ExecuteReader())
-                {
-                    //Check the reader has data:
-                    if (reader.Read())
-                    {
-                        productID = reader.GetOrdinal("productID");
-                    }
-                    // If you need to use all rows returned use a loop:
-                    //while (reader.Read())
-                    //{
-                    //    // Do something
-                    //}
-                }
-            }
-        }
-
-        protected void Image1_Click(object sender, ImageClickEventArgs e)
-        {
-            string productID = Request.QueryString["productID"];
-            Response.Redirect("viewindividualproduct.aspx");
         }
     }
 }

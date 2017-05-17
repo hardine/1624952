@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -46,11 +47,53 @@ namespace CampingGears
             string descrip = description.Text;
             string instock = stock.Text;
             string prodprice = Price.Text;
+            int errorflag = 0;
+            string errormessage = "";
 
-            sqlcmd = new SqlCommand("INSERT INTO [Product] ([ProductName], [Category], [Description], [Flag], [Stock], [price], [Image])"+
-                            "Values ('"+ prodName + "',"+ category + ",'"+ descrip + "',0,"+ instock + ","+ prodprice + ",null)", myConnection);
-            sqlcmd.ExecuteNonQuery();
-            Lerroralert.Text = "product "+prodName+" is successfully Created!";
+            if ((prodName == "") || (prodName == null)) {
+                errorflag = 1;
+                errormessage += "Product Name cannot be empty! <br/>";
+            }
+            if ((descrip == "") || (descrip == null))
+            {
+                errorflag = 1;
+                errormessage += "Product Description cannot be empty! <br/>";
+            }
+            if ((instock == "") || (instock == null))
+            {
+                errorflag = 1;
+                errormessage += "Product Stock cannot be empty! <br/>";
+            } else
+            {
+                if (Regex.IsMatch(instock, @"^\d+$"))
+                {
+                    errorflag = 0;
+                }
+                else
+                {
+                    errorflag = 1;
+                    errormessage += "Product Stock must be numeric! <br/>";
+                }
+            }
+
+            if (errorflag == 1)
+            {
+                Lerroralert.Text = errormessage;
+            }
+            else
+            {
+                sqlcmd = new SqlCommand("INSERT INTO [Product] ([ProductName], [Category], [Description], [Flag], [Stock], [price], [Image])" +
+                    "Values ('" + prodName + "'," + category + ",'" + descrip + "',0," + instock + "," + prodprice + ",null)", myConnection);
+                sqlcmd.ExecuteNonQuery();
+                Lerroralert.Text = "product " + prodName + " is successfully Created!";
+            }
+
+
+
+
+
+
+    
 
         }
     }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 
 namespace CampingGears
 {
@@ -67,14 +68,33 @@ namespace CampingGears
             udescrip = description.Text;
             uinstock = stock.Text;
             uprodprice = Price.Text;
+            int errorflag = 0;
+            string errormessage = "";
 
-            string query = "UPDATE[Product] SET[ProductName] = '" + uprodName +
-               "',[Category] =" + ucategory + ",[Description]='" + udescrip +
-               "',[Stock]=2" + ",[price]=" + uprodprice + " WHERE [ProductID] =" + productId + "";
-            sqlcmd = new SqlCommand(query, myConnection);
-            sqlcmd.ExecuteNonQuery();
-            refreshvalue();
-            Lerroralert.Text = "Details for this product is successfully Updated!";
+          
+                if (Regex.IsMatch(uinstock, @"^\d+$"))
+                {
+                    errorflag = 0;
+                }
+                else
+                {
+                    errorflag = 1;
+                    errormessage += "Product Stock must be numeric! <br/>";
+                }
+            if (errorflag == 1)
+            {
+                Lerroralert.Text = errormessage;
+            }
+            else
+            {
+                string query = "UPDATE[Product] SET[ProductName] = '" + uprodName +
+                   "',[Category] =" + ucategory + ",[Description]='" + udescrip +
+                   "',[Stock]=" + uinstock + ",[price]=" + uprodprice + " WHERE [ProductID] =" + productId + "";
+                sqlcmd = new SqlCommand(query, myConnection);
+                sqlcmd.ExecuteNonQuery();
+                refreshvalue();
+                Lerroralert.Text = "Details for this product is successfully Updated!";
+            }
         }
 
         public void refreshvalue()

@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form id="productform" runat="server">
-        <asp:Image ID="CurrentImage" runat="server" CssClass="prodimages" /><br/>
+        <asp:Image ID="CurrentImage" runat="server" AlternateText="~/ProductImages/default.png" CssClass="prodimages" /><br/>
 <asp:Label ID="productnamelbl" runat="server" Text="Product Name:"></asp:Label><br/>
  <asp:TextBox ID="productName" runat="server" TextMode="SingleLine" Height="16px" Width="300px" ReadOnly="True"></asp:TextBox><br/><br/>
      <asp:Label ID="Descriptionlbl" runat="server" Text="Description:"></asp:Label><br/>

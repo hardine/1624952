@@ -10,6 +10,7 @@
        
         <asp:Image ID="CurrentImage" runat="server" AlternateText="~/ProductImages/default.png" CssClass="prodimages" />
         <br />
+          <asp:Button ID="Button1" runat="server" Text="Back" OnClick="back_button_Click" />
         <asp:Button ID="submitbutton" runat="server" Text="Submit" OnClick="submitbutton_Click" />
         <br />
     </form>

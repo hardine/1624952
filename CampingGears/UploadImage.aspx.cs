@@ -27,5 +27,10 @@ namespace CampingGears
 
             Lerroralert.Text = "Image successfully uploaded!";
         }
+
+        protected void back_button_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AdminViewProduct.aspx");
+        }
     }
 }
